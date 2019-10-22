@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fuxi</title>
+    <style type='text/css'>
+        *{
+            margin : 0px;
+            padding: 0px;
+        }
+            header nav{
+                border: solid 3px black;
+                width: 100%;
+                height: 250px;
+                background-image:url("../../imagers/timg.jpg");
+                background-size: 100%;
+                background-position: top;
+            }
+                header nav ul {
+                    text-align: center;
+                }
+                    header nav ul li a{
+                        text-decoration: none;
+                        color:pink;
+                    }
+                header h1 {
+                    font-size: 50px;
+                    display: inline-block;
+                    margin-left:20px;
+                }
+                    header nav ul .small {
+                        display: none;
+                    }
+                    header nav ul li {
+                        display: inline-block;
+                        width: 100px;
+                        height: 100px;
+                        text-align: center;
+                        line-height: 100px;
+                        font-weight: 800;
+                        font-size: 30px;
+                        margin:0 50px;
+                    }
+                    header nav ul .loge {
+                        background-image: url("../../imagers/logo.png");
+                        background-size: 80px;
+                        text-indent: -9999999px;
+                       background-repeat: no-repeat;
+                       position: relative;
+                       top:10px;
+                    }
+        @media screen and (max-width: 815px) {
+            header nav ul .big {
+                        display: none;
+                    }
+            header nav ul .small {
+                display: inline-block;
+                margin: 0 50px;
+            }
+        }
+        @media screen and (max-width: 607px) {
+            header nav ul .big {
+                        display: none;
+                    }
+            header nav ul .small {
+                display: inline-block;
+                margin: 0 25px;
+            }
+        }
+            main article {
+                border: solid 3px black;
+            }
+            main section {
+                border: solid 3px black;
+            }
+                main section ul {
+                    list-style: none;
+                    display: flex;
+                    width: 100%;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                    main section ul li {
+                        width: 200px;
+                        height: 200px;
+                        margin: auto;
+                    }
+                    main section ul li img {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        border: 1px solid white;
+                        box-shadow:black 0px 0px 10px;
+                    }
+            main section:last-of-type {
+                width: 450px;
+                height: 100px;
+                margin: 0 auto;
+            }        
+        footer {
+            border: solid 3px black;
+            background: rgb(51, 51, 51);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="small"><a href="home.html">home</a></li>
+                <li class="small"><a href="wan.html">wan</a></li>
+                <li class="small"><a href="picture.html">picture</a></li>
+                <li class="loge small"><a href="home.html" >loge</a></li>
+                <li class="big"><a href="home.html">home</a></li>
+                <li class="big"><a href="wan.html">wan</a></li>
+                <li class="loge big"><a href="home.html" >loge</a></li>
+                <li class="big"><a href="picture.html">picture</a></li>
+            </ul>
+            <h1>
+                home
+            </h1>
+        </nav>
+    </header>
+    <main> 
+        <section>
+            <ul>
+                <li><img src="../../imagers/49.jpg" alt=""></li>
+                <li><img src="../../imagers/8单.jpg" alt=""></li>
+                <li><img src="../../imagers/黑.jpg" alt=""></li>
+            </ul>
+        </section>
+        <section>section2</section>
+        <article>article</article>
+    </main>
+    <footer>158-888-8888 happay day</footer>
+</body>
+</html>
